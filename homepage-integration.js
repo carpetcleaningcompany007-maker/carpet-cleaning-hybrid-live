@@ -36,7 +36,7 @@
         document.dispatchEvent(new Event("analytics:form-submit-success"));
         if (typeof window.gtag === "function") window.gtag("event", "generate_lead", { landing_area: "Ludlow and Shrewsbury", service: String(data.get("service") || "") });
         if (status) status.textContent = "Thank you — your enquiry has been sent.";
-        setTimeout(function () { location.href = "/thank-you.html"; }, 700);
+        setTimeout(function () { location.href = "https://www.thecarpetcleaningcrew.co.uk/thank-you.html"; }, 700);
       } catch (error) {
         if (status) status.textContent = "The connection was interrupted and your enquiry was not sent. Please try again or call 07802 563213.";
         if (button) { button.disabled = false; button.textContent = oldText; }
